@@ -1,9 +1,9 @@
 import logo from "../img/logo.png";
 export default function HeaderOne(){
     return(
-        <div className="h-[140px] w-full bg-[url(img/bottom-banner1.jpg)] bg-cover text-gray-400">
+        <div className="h-[150px] w-full bg-[url(img/bottom-banner1.jpg)] bg-cover text-gray-400">
             {/* One Bakhsh start */}
-            <div className="bg-[rgba(0,0,0,0.6)] flex flex-col justify-between h-full w-full">
+            <div className="bg-[rgba(0,0,0,0.6)] relative flex flex-col justify-between h-full w-full">
                 {/* nave one start */}
             <nav className="flex justify-between p-4 h-6 items-center">
                 <div className="flex space-x-3 ">
@@ -26,7 +26,7 @@ export default function HeaderOne(){
             </nav>
             {/* nav one endded */}
             {/* start logo and input */}
-            <div className="w-[90%] h-full mx-4 flex justify-between items-center">
+            <div className="w-[90%] h-full mx-4 mb-5 flex justify-between items-center">
                 <img src={logo} alt="" />
                 {/* logo endedd */}
                 {/* input start */}
@@ -67,17 +67,17 @@ shopping_cart
                 {/* added to cart endedd */}
                 </div>
             </div>
+             <div className="flex space-x-5 px-5 p-3 h-fit custom-clip bg-emerald-400 w-[90%] -bottom-6 left-12 text-white mx-auto absolute">
+                <li className=" h-[60%] px-2 border-r border-white hover:cursor-pointer font-medium list-none">Home</li>
+                <li className=" h-[60%] px-2 border-r border-white hover:cursor-pointer font-medium list-none">VEGETABLES</li>
+                <li className=" h-[60%] px-2 border-r border-white hover:cursor-pointer font-medium list-none">FRUITS</li>
+                <li className=" h-[60%] px-2 border-r border-white hover:cursor-pointer font-medium list-none">ORGANIC FRUITS</li>
+                <li className=" h-[60%] px-2 border-r border-white hover:cursor-pointer font-medium list-none">BLOG</li>
+                <li className=" h-[60%] px-2 border-r border-white hover:cursor-pointer font-medium list-none">PAGES</li>
+                <li className=" h-[60%] px-2 border-r border-white hover:cursor-pointer font-medium list-none">SHOP</li>
+            </div>
             </div>
             {/* One bakhsh endded */}
-            <div className="flex space-x-5 px-5">
-                <li className=" p-2 border-r border-gray-500 list-none">Home</li>
-                <li className=" p-2 border-r border-gray-500 list-none">VEGETABLES</li>
-                <li className=" p-2 border-r border-gray-500 list-none">FRUITS</li>
-                <li className=" p-2 border-r border-gray-500 list-none">ORGANIC FRUITS</li>
-                <li className=" p-2 border-r border-gray-500 list-none">BLOG</li>
-                <li className=" p-2 border-r border-gray-500 list-none">PAGES</li>
-                <li className=" p-2 border-r border-gray-500 list-none">SHOP</li>
-            </div>
         </div>
     )
 }

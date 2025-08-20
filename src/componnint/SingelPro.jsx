@@ -5,7 +5,7 @@ export default function SingelPro(){
             <div className="w-[95%] h-[320px] overflow-hidden">
             <img src={product3} className=" h-ful w-full transition-transform duration-300 ease-in-out transform hover:scale-140" alt="" />
             </div>
-            <h1>Oringe</h1>
+            <h1 className=" group-hover:text-emerald-600">Oringe</h1>
             <div className="flex items-center justify-center">
                 <span class="material-symbols-outlined">
 star
@@ -24,7 +24,7 @@ star
 </span>
             </div>
             <strong>$14.00</strong>
-            <button className="py-1 px-4 border border-gray-400 hover:bg-gray-400">ADD TO CART</button>
+            <button className="py-1 px-4 border group-hover:bg-emerald-600 border-gray-400 hover:bg-gray-400">ADD TO CART</button>
             <div className="flex flex-col gap-1 absolute top-8 left-4">
                 <button className="py-1 px-3 bg-emerald-600 flex-col flex  text-white text-center ">
                     <span className="font-bold">00</span>

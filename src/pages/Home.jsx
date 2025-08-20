@@ -1,4 +1,5 @@
 import HeaderOne from "../componnint/HeaderOne";
+import Product from "../componnint/Products";
 import Slider from "../componnint/Slider";
 
 export default function Home(){
@@ -6,6 +7,7 @@ export default function Home(){
         <div >
             <HeaderOne/>
             <Slider/>
+            <Product/>
         </div>
     )
 }

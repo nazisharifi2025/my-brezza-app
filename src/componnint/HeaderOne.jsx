@@ -55,7 +55,7 @@ favorite
                 {/* like endded */}
                 {/* add to cart start */}
                 <div className="flex items-center">
-                    <button className="p-[5px] border-r border-gray-400 bg-white rounded-sm rounded-r-none">
+                    <button className="py-[5px] px-3 border-r border-gray-400 bg-white rounded-sm rounded-r-none">
                         <span class="material-symbols-outlined">
 shopping_cart
 </span>

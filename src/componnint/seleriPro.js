@@ -3,6 +3,7 @@ import pro2 from "../img/product10-290x340 (1).jpg"
 import pro3 from "../img/product15-290x340.jpg"
 import pro4 from "../img/product21-290x340.jpg"
 import pro5 from "../img/product5-290x340.jpg"
+import pro6 from "../img/angor.jpg"
 export function allPro(){
     return[
         {
@@ -38,6 +39,13 @@ export function allPro(){
                            imgUrl : pro5,
                            name : "Kiwi",
                            price : "$80.00",
+                           butten : "ADD TO CART"
+                       },
+                       {
+                           id : 5,
+                           imgUrl : pro6,
+                           name : "Grapis green grobe",
+                           price : "$18.00",
                            butten : "ADD TO CART"
                        },
     ]

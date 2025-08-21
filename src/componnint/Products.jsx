@@ -4,13 +4,13 @@ import { creatpro } from "./creatPro";
 export default function Product(){
     const pruduct = creatpro()
     return(
-        <div className="h-fit w-[95%] mx-auto p-2 flex gap-4">
+        <div className="h-fit w-[95%] mx-auto p-2 flex lg:flex-row md:flex-col flex-col gap-4">
             <SingelPro/>
-            <div className="w-[75%]  flex flex-col h-[73vh]">
+            <div className="lg:w-[75%] md:w-full  flex flex-col lg:h-[73vh] md:h-[100vh] lg:mx-auto md:my-3">
                 {/* Abstraction start */}
-                <div className=" flex w-full justify-between ">
+                <div className=" flex w-full  justify-between lg:flex-nowrap md:flex-wrap flex-wrap">
                     <h1 className="text-2xl"><span className="text-emerald-600">NEW</span> PRODUCT</h1>
-                    <div className=" flex font-light space-x-2 ">
+                    <div className=" flex lg:flex-nowrap md:flex-wrap flex-wrap font-light space-x-2 ">
                         <button className="py-1 px-4  bg-pink-200 rounded-sm">FROUTS VEGETABLES</button>
                         <button className="py-1 px-4  bg-gray-200 rounded-sm">FROUTS </button>
                         <button className="py-1 px-4  bg-gray-200 rounded-sm">ORGANIC VEGETABLES</button>
@@ -20,9 +20,9 @@ export default function Product(){
                 </div>
                 {/* Abstraction end */}
                 {/* Product stat */}
-                <div className="h-[69vh] w-full m-2 p-2 flex gap-3 ">
+                <div className="lg:h-[69vh] md:h-[100vh] w-full m-2 p-2 flex lg:flex-nowrap md:flex-wrap flex-wrap gap-3 ">
                     {pruduct.map(product=>(
-                        <div className="flex group gap-2 relative justify-center flex-col items-center">
+                        <div className="flex group gap-2 relative mx-auto justify-center flex-col items-center">
                             <div className=" overflow-hidden">
                         <img src={product.imgUrl} className=" h-ful w-full transition-transform duration-300 ease-in-out transform hover:scale-110" alt="" />
                         </div>

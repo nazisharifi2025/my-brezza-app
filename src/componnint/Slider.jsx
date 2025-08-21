@@ -32,9 +32,9 @@ export default function Slider(){
     }, []);
 
     return(
-        <div className="h-fit mt-12 w-[93%] mx-auto flex items-center">
+        <div className="h-fit mt-12 w-[93%] mx-auto flex lg:flex-row md:flex-col flex-col items-center">
             {/* slider start */}
-              <div className="relative h-[74vh] w-[45%] overflow-hidden">
+              <div className="relative lg:h-[74vh] md:h-[40vh] h-[50vh] z-20 lg:w-[45%] md:w-full w-full overflow-hidden">
             {slides.map((slide, index) => (
                 <div
                     key={index}
@@ -69,14 +69,16 @@ export default function Slider(){
         </div>
             {/* slider endded */}
             {/* banner start */}
-            <div className="w-[30%] justify-center items-center flex flex-col h-fit p-4 gap-5">
+            <div className="lg:w-[60%] md:w-full w-full flex lg:flex-row md:flex-row flex-col md:my-6">
+            <div className="lg:w-1/2 md:w-1/2 w-full justify-center items-center flex flex-col h-fit p-4 gap-5">
                 <img src={banner1} className="w-[83%]" alt="" />
                 <img src={banner2} className="w-[83%]" alt="" />
             </div>
             {/* Banner endded */}
             {/* banner2 start */}
-            <div className="w-[30%] h-[74vh]">
+            <div className="lg:w-1/2 md:w-1/2 w-full lg:h-[74vh] md:h-[47vh]">
             <img src={banner3} className="h-full w-full" alt="" />
+            </div>
             </div>
             {/* banner2 endded */}
         </div>

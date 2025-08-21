@@ -4,7 +4,8 @@ import pay3 from "../img/payment-3.png"
 import pay4 from "../img/payment-4.png"
 export default function Footer(){
     return(
-        <div className="h-[70vh] w-full flex px-4 justify-between items-center bg-black text-white">
+        <div className="lg:h-[70vh] md:h-[50vh] h-[120vh] flex-col w-full flex lg:flex-row md:flex-col px-4 justify-between items-center bg-black text-white">
+            <div className="flex justify-evenly lg:flex-row md:flex-row flex-col gap-12">
             <ul className="flex flex-col gap-2">
                 <li className="font-bold text-xl my-3">My Account</li>
                 <li>Login</li>
@@ -32,11 +33,12 @@ export default function Footer(){
                 <li>Suppliers</li>
                 <li>Our Stores</li>
             </ul>
+            </div>
            <div className="flex flex-col gap-4 ">
             <div>
                 <h1 className="font-bold ">SIGN UP FOR EMAILS:</h1>
                 <div className="flex items-center gap-3">
-                    <input type="text" className="py-2 px-24 outline-0 text-gray-600 bg-white rounded-sm " placeholder="Enter your Email" />
+                    <input type="text" className="py-2 lg:px-24 md:px-24 px-12 outline-0 text-gray-600 bg-white rounded-sm " placeholder="Enter your Email" />
                     <button className="py-2 px-4 bg-green-400 text-white rounded-sm">Subscribe</button>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import product3 from "../img/product3-290x340.jpg"
 export default function SingelPro(){
     return(
-        <div className="h-[73vh] w-[23%] relative py-2 flex flex-col group justify-between items-center border border-gray-300">
+        <div className="lg:h-[73vh] md:h-[50vh] lg:w-[23%] md:w-[50%] md:mx-auto relative py-2 flex flex-col group justify-between items-center border border-gray-300">
             <div className="w-[95%] h-[320px] overflow-hidden">
             <img src={product3} className=" h-ful w-full transition-transform duration-300 ease-in-out transform hover:scale-140" alt="" />
             </div>

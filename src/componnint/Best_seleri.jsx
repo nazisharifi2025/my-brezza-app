@@ -7,7 +7,7 @@ import { allPro } from "./seleriPro";
 export default function Best_seleri() {
   const allpro = allPro();
    return (
-    <div className="w-full h-[65vh] my-6 px-6">
+    <div className="w-full lg:h-[65vh] md:h-[40vh] my-6 px-6">
       <Swiper
         modules={[Navigation]}
         spaceBetween={20}
@@ -17,13 +17,13 @@ export default function Best_seleri() {
         className="mySwiper"
         breakpoints={{
           320: { slidesPerView: 1 },
-          640: { slidesPerView: 2 },
+          640: { slidesPerView: 3 },
           1024: { slidesPerView: 5 },
         }}
       >
         {allpro.map(product => (
           <SwiperSlide key={product.id}>
-            <div className="flex group h-full w-[230px] gap-2 relative justify-center flex-col items-center">
+            <div className="flex group h-full w-[230px] gap-2 mx-auto relative justify-center flex-col items-center">
               <div className="overflow-hidden w-full">
                 <img
                   src={product.imgUrl}

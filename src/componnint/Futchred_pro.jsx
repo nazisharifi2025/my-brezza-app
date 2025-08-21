@@ -13,9 +13,9 @@ export default function Futchered_pro() {
   const goNext = () => swiperRef.current?.slideNext();
 
   return (
-    <div className="w-[90%] h-fit py-6 flex gap-5 mx-auto px-5">
+    <div className="lg:w-[90%] md:w-[90%] w-full h-fit py-6 flex lg:flex-row md:flex-row flex-col gap-5 mx-auto px-5">
       {/* ✅ Swiper Section */}
-      <div className="w-[75%]">
+      <div className="lg:w-[75%] md:w-[65%]">
         <Swiper
           modules={[Navigation]}
           spaceBetween={20}
@@ -77,7 +77,7 @@ export default function Futchered_pro() {
       </div>
 
       {/* ✅ Featured Section with navigation buttons */}
-      <div className="w-[25%] h-[70vh] bg-[url(img/Vegetable-planting3.jpg)] bg-cover bg-center">
+      <div className="lg:w-[25%] md:w-[35%] lg:h-[70vh] md:h-[45vh] bg-[url(img/Vegetable-planting3.jpg)] bg-cover bg-center">
         <div className="w-full h-full bg-[rgba(0,0,0,0.5)] p-5 flex flex-col justify-between">
           <div>
             <h1 className="text-3xl w-full p-4 border-b border-gray-300 text-white">

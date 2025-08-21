@@ -2,10 +2,10 @@ import { PostPro } from "./PostPro";
 export default function Posted(){
     const post = PostPro();
     return(
-        <div className="flex w-[90%] mx-auto my-6 h-[80vh] gap-3">
+        <div className="flex w-[90%] lg:flex-row md:flex-row flex-col mx-auto my-6 lg:h-[80vh] md:h-[45vh] gap-3">
         {post.map(posts=>{
             return(
-            <div className="w-[50%] h-full relative group">
+            <div className="lg:w-[50%] md:w-[50%] w-full h-full relative group">
                 <img src={posts.imgUrl} alt="" />
                 <div className="text-gray-400 flex gap-4">
                     <div className="flex items-center">

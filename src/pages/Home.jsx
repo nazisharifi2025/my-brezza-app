@@ -10,7 +10,7 @@ import Swiper from "../componnint/Swiper";
 
 export default function Home(){
     return(
-        <div >
+        <div  className="w-full h-screen overflow-y-scroll">
             <HeaderOne/>
             <Slider/>
             <Product/>

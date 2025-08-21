@@ -133,8 +133,8 @@ menu
 
             </div>
             {/* One bakhsh endded */}
-            <div className={`w-[40%] h-screen bg-gray-400 flex flex-col overflow-y-scroll fixed  top-0 lg:hidden md:hidden  -left-[40%] transition-all duration-500 z-50
-                ${isOpen  ? "left-0" : "-left-[40%]" }
+            <div className={`w-[60%] h-screen bg-gray-400 flex flex-col overflow-y-scroll fixed  top-0 lg:hidden md:hidden  -left-[60%] transition-all duration-500 z-50
+                ${isOpen  ? "left-0" : "-left-[60%]" }
                 `}>
                      <button
                     onClick={() => setIsOpen(false)}

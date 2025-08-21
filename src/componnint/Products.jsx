@@ -4,7 +4,7 @@ import { creatpro } from "./creatPro";
 export default function Product(){
     const pruduct = creatpro()
     return(
-        <div className="h-fit w-[95%] mx-auto p-2 flex lg:flex-row md:flex-col flex-col gap-4">
+        <div className="h-fit w-[95%] mx-auto flex lg:flex-row md:flex-col flex-col gap-4">
             <SingelPro/>
             <div className="lg:w-[75%] md:w-full  flex flex-col lg:h-[73vh] md:h-[100vh] lg:mx-auto md:my-3">
                 {/* Abstraction start */}

@@ -39,7 +39,7 @@ export default function Futchered_pro() {
                   <img
                     src={product.imgUrl}
                     alt={product.name}
-                    className="h-full w-full transition-transform duration-300 ease-in-out transform hover:scale-110"
+                    className="h-full w-full  "
                   />
                 </div>
 
